@@ -167,7 +167,6 @@ a {
 /* DETAILS SECTION 1 */
 
 .section-1-logo-container {
-  height: 100%;
   object-fit: cover;
 
   display: flex;
@@ -176,10 +175,12 @@ a {
 }
 
 .section-1-logo-container-big {
+  height: 2.4rem;
   width: 2.4rem;
 }
 
 .section-1-logo-container-small {
+  height: 1.8rem;
   width: 1.8rem;
 }
 
