@@ -1,0 +1,324 @@
+/* GENERAL - CSS RESET */
+:root {
+  --white: #f7f9f7;
+  --black: #141414;
+  --blue: #109bf0;
+
+  --green: #67a62d;
+  --red: #eb2d03;
+  --gray: #282828;
+  --light-gray: #373737;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--black);
+  color: var(--white);
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* LOGOS */
+
+.logo-container {
+  color: var(--light-gray);
+  margin: 2rem 20% 2rem auto;
+  display: flex;
+  gap: 2rem;
+}
+
+.profile-logo {
+  font-size: 3rem;
+  transition: all 0.2s ease;
+}
+
+.profile-logo:hover {
+  transform: scale(1.4);
+  cursor: pointer;
+  color: var(--white);
+}
+
+.profile-logo:active {
+  transform: scale(1.2);
+  color: var(--blue);
+}
+
+/* HEADER */
+
+.main-container {
+  margin: 0 auto;
+  max-width: 75%;
+}
+
+.header-container {
+  background-color: var(--gray);
+  margin: 0 5rem 0 5rem;
+  padding: 4rem 4rem 6rem 4rem;
+  border-bottom: 0.2rem solid var(--light-gray);
+
+  /* TODO: MEDIA QUERIES */
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bio-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.bio-img-container {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+}
+
+.bio-img {
+  width: 100%;
+  height: 100%;
+}
+
+.bio-title-container {
+  min-width: 50%;
+}
+
+.bio-title-name {
+  font-weight: 700;
+  font-size: 2.6rem;
+
+  margin-top: 1rem;
+}
+
+.bio-title-job {
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin-top: 0.5rem;
+  color: var(--blue);
+}
+
+.info-container {
+  margin-top: 1rem;
+  margin-left: auto;
+}
+.info-list {
+  list-style: none;
+  display: table;
+}
+
+.info-text {
+  font-size: 1.4rem;
+  margin-top: 0.4rem;
+  display: table-row;
+}
+
+.info-text-bold {
+  font-weight: 700;
+  display: table-cell;
+  text-align: right;
+}
+
+.info-text-normal {
+  margin-left: 0.5rem;
+}
+
+.desc-container {
+  margin-top: 3rem;
+}
+
+.desc {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+/* DETAILS */
+
+.section-container {
+  background-color: var(--gray);
+  padding: 5rem 5rem 5rem 5rem;
+  margin: 0 5rem 5rem 5rem;
+  border-bottom: 0.2rem solid var(--light-gray);
+
+  /* TODO: MEDIA QUERIES */
+
+  display: flex;
+}
+
+/* DETAILS SECTION 1 */
+
+.section-1-logo-container {
+  height: 100%;
+  object-fit: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-1-logo-container-big {
+  width: 2.4rem;
+}
+
+.section-1-logo-container-small {
+  width: 1.8rem;
+}
+
+.details-1-container {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 4rem;
+}
+.details-1-title-container {
+  height: 2.4rem;
+  font-size: 1.5rem;
+
+  display: flex;
+}
+
+.details-1-title-text-main {
+  font-weight: 700;
+  padding: 0.5rem 0 1rem 1rem;
+  background-color: var(--light-gray);
+  width: 100%;
+}
+
+.details-1 {
+  margin: 3rem 0;
+  padding-left: 1rem;
+}
+
+.details-1-title {
+  display: flex;
+
+  height: 2rem;
+  margin-bottom: 5rem;
+}
+
+.details-1-company-logo {
+  font-size: 1.2rem;
+  border-radius: 50%;
+}
+
+.details-1-title-text {
+  margin-left: 2rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.details-1-title-company {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.details-1-title-job {
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.details-1-year {
+  margin-left: auto;
+}
+
+.experience {
+  background-color: var(--blue);
+}
+
+.education {
+  background-color: var(--green);
+}
+
+/* DETAILS SECTION 2 */
+
+.details-2 {
+  margin-left: 5rem;
+}
+
+.skills-title {
+  font-weight: 700;
+}
+
+.list {
+  list-style-type: square;
+}
+
+.list-item {
+  margin-bottom: 0.5rem;
+}
+
+.skill-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 8rem;
+}
+
+.tech-stack-list-item::marker {
+  color: var(--blue);
+}
+
+.soft-skills-list-item::marker {
+  color: var(--green);
+}
+
+.languages-list-item::marker {
+  color: var(--red);
+}
+
+@media screen and (max-width: 1200px) {
+  .main-container {
+    max-width: 90%;
+  }
+
+  .header-container {
+    margin: 0;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .section-container {
+    margin: 0 0 5rem 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bio-img-container {
+    display: none;
+  }
+  .info-container {
+    margin-top: 3rem;
+    margin-left: 0;
+  }
+  .section-container {
+    flex-direction: column;
+  }
+  .details-1-title-text {
+    margin-left: 1rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .logo-container {
+    margin: 2rem auto;
+  }
+}
