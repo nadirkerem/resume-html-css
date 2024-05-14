@@ -15,6 +15,10 @@ This repository contains an assignment for the Per Scholas Software Engineering 
 - HTML5
 - CSS3
 
+## Live Site
+
+[View Live Site](https://resume-html-css-mu.vercel.app/)
+
 ## Getting Started
 
 To view the resume, simply open the `index.html` file in your web browser.
